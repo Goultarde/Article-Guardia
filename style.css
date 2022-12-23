@@ -1,1 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+.stylenavbar{
+    background :  rgba(0, 0, 0, 0.6);
+    font-family: 'Secular One';
+    font-size:large;
+}
+.stylenavbar .nav-link{
+    border-bottom: 1px solid transparent;
+    transition: padding-bottom .4s ease-in-out, border-color .3s ease;
+}
+.stylenavbar .nav-link:hover{
+    padding-bottom: 20px;
+    border-bottom-color: white;
+}
+.navbar:hover 
+{ background-color: rgb(54, 54, 54); color: 54, 54, 54; }
 
+.body{
+    background-color: black;
+}
+body{
+    background: #000;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.8)
+        ),
+        url(img/cybersec.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: no-repeat;
+    background-size: cover;
+}
+.header-content{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.backstylewhite{
+    background: rgb(227, 227, 227);
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    
+}
+.backstylewhitenomargin{
+    background: rgb(227, 227, 227);
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
+}
+.roundbord{
+    border-radius: 10px;    
+}
+.espace_petit{
+    margin: 10px;
+}
+.espace_moyen{
+    margin: 50px;
+}.espace_large{
+    margin: 100px;
+}
+.text-center{
+    text-align: justify;
+    
+}
