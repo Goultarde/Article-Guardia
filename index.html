@@ -71,6 +71,8 @@
 		<div class="container">
 			<div class="header-content"></div>
 			<div class="row justify-content-center">
+				<div class="espace_large"></div>
+				<div class="espace_large"></div>
 				<div class="col-9 roundbord backstylewhite">
 					<h1>Apprendre la cybersécurité par la pratique à Guardia School</h1>
 					<p>
@@ -274,9 +276,155 @@
 							Comme vous pouvez le voir, la page ce lance sans problème
 						</p>
 					</div>
-				</div>
+					<h2>Configuration du Serveur DNS</h2>
+					<div class="col-5">
+						<p>1) Pour commencer on va installer bind9 le serveur DNS.</p>
+						<p>
+							Sur l'image vous pouvez voir que bind9 est déjà installer, l'étape
+							suivante est donc la configuration de ce dernier affin qu'il puissent
+							résoudre un nom de domaine.
+						</p>
+					</div>
+					<div class="col-6">
+						<img src="img/kali/1.png" class="img-fluid rounded" alt="" />
+					</div>
+					<div class="espace_moyen"></div>
+					<div class="col-5">
+						<p>
+							2) Le premier fichier que l'on va venir modifier est le fichier
+							"named.conf.options"
+						</p>
+					</div>
 
-				<div class="row justify-content-center"></div>
+					<div class="col-6">
+						<img src="img/kali/2.png" class="img-fluid rounded" alt="" />
+					</div>
+					<div class="col-5">
+						<p>
+							Dans ce fichier on va pouvoir mettre ce que l'on appelle un DNS
+							FORWARDER, c'est à dire que ça va être un DNS complémentaire qui va
+							résoudre les nom de domaine que le DNS principale ne peut pas résoudre.
+							Ici j'ai mis le serveur DNS de google.
+						</p>
+					</div>
+
+					<div class="col-6">
+						<img src="img/kali/3.png" class="img-fluid rounded" alt="" />
+					</div>
+					<div class="espace_moyen"></div>
+
+					<div class="col-5">
+						<p>
+							4) Le prochain fichier à modifier est le fichier : "named.conf.local".
+						</p>
+					</div>
+
+					<div class="col-6">
+						<img src="img/kali/4.png" class="img-fluid rounded" alt="" />
+					</div>
+					<div class="espace_moyen"></div>
+					<div class="col-5">
+						<p>
+							C'est ici que l'on va configurer la zone, j'ai donner comme nom de
+							domaine, le nom "harouna.com"
+						</p>
+						<p>
+							Cela pourait être n'importe quoi du moment qu'il y bien un
+							".quelquechose"
+						</p>
+					</div>
+
+					<div class="col-6">
+						<img src="img/kali/5.png" class="img-fluid rounded" alt="" />
+					</div>
+					<div class="espace_moyen"></div>
+					<div class="col-5">
+						<p>Ici je vais crée le fichier "haoruna.com" avec la commande touch,.</p>
+					</div>
+
+					<div class="col-6">
+						<img src="img/kali/6.png" class="img-fluid rounded" alt="" />
+					</div>
+					<div class="espace_petit"></div>
+					<div class="col-5">
+						<p>Je modifier le fichier avec la commande nano :</p>
+					</div>
+
+					<div class="col-6">
+						<img src="img/kali/7.png" class="img-fluid rounded" alt="" />
+					</div>
+					<div class="espace_moyen"></div>
+					<div class="col-5">
+						<p>
+							Et je vais enfin pouvoir finaliser mon dns et assotiant l'ip de ma
+							machine debian (là ou il y a mon serveur web), et mon nom de domaine
+							"harouna.com" fraichement crée :
+						</p>
+					</div>
+
+					<div class="col-6">
+						<img src="img/kali/8.png" class="img-fluid rounded" alt="" />
+					</div>
+					<div class="espace_petit"></div>
+					<div class="col-5">
+						<p>je redémare bind :</p>
+					</div>
+
+					<div class="col-6">
+						<img src="img/kali/10.png" class="img-fluid rounded" alt="" />
+					</div>
+					<div class="espace_petit"></div>
+					<div class="col-5">
+						<p>
+							Enfin je vérifie que tout foctionne avec la commande service named
+							status :
+						</p>
+					</div>
+
+					<div class="col-6">
+						<img src="img/kali/11.png" class="img-fluid rounded" alt="" />
+					</div>
+					<div class="espace_moyen"></div>
+					<h2>Configuration d'un Windows Serveur Client</h2>
+					<div class="col-5">
+						<p>
+							1) Affin de tester mes serveurs WEB et DNS en temp réel, j'ai pris une
+							machine windows cliente sur la quel je vais
+						</p>
+						<p>
+							Sur l'image vous pouvez voir que bind9 est déjà installer, l'étape
+							suivante est donc la configuration de ce dernier affin qu'il puissent
+							résoudre un nom de domaine.
+						</p>
+					</div>
+					<div class="col-6">
+						<img src="img/kali/1.png" class="img-fluid rounded" alt="" />
+					</div>
+					<div class="espace_moyen"></div>
+					<div class="col-5">
+						<p>
+							2) Le premier fichier que l'on va venir modifier est le fichier
+							"named.conf.options"
+						</p>
+					</div>
+
+					<div class="col-6">
+						<img src="img/kali/2.png" class="img-fluid rounded" alt="" />
+					</div>
+					<div class="col-5">
+						<p>
+							Dans ce fichier on va pouvoir mettre ce que l'on appelle un DNS
+							FORWARDER, c'est à dire que ça va être un DNS complémentaire qui va
+							résoudre les nom de domaine que le DNS principale ne peut pas résoudre.
+							Ici j'ai mis le serveur DNS de google.
+						</p>
+					</div>
+
+					<div class="col-6">
+						<img src="img/kali/3.png" class="img-fluid rounded" alt="" />
+					</div>
+					<div class="espace_moyen"></div>
+				</div>
 			</div>
 		</section>
 		<!--Projet 3-->
@@ -356,9 +504,69 @@
 				<div class="container">
 					<div class="row justify-content-center backstylewhite">
 						<h2 class="text-center">PROJET 4&5</h2>
-						<div class="col-9"></div>
-						<div class="col-3">
-							<img src="img/oral.png" class="img-fluid rounded" alt="oral" />
+						<div class="col-9">
+							<p>
+								HTML (HyperText Markup Language) est un langage de balisage utilisé
+								pour structurer et donner du sens aux contenus d'un document web. Il
+								permet de définir les titres, les paragraphes, les listes, les
+								liens, les images, etc. HTML est le fondement de tout site internet
+								et est le langage de base de la programmation web.
+							</p>
+						</div>
+						<div class="col-1">
+							<img src="img/html.png" class="img-fluid rounded" alt="html" />
+						</div>
+						<div class="espace_petit"></div>
+						<div class="col-9">
+							<p>
+								CSS (Cascading Style Sheets) est un langage de feuilles de style
+								utilisé pour décrire l'apparence des éléments HTML. Il permet de
+								définir les couleurs, les polices de caractère, les marges, les
+								padding, les bordures, etc. CSS est utilisé pour donner du style et
+								de l'esthétique aux sites internet.
+							</p>
+						</div>
+						<div class="col-1">
+							<img src="img/css.png" class="img-fluid rounded" alt="html" />
+						</div>
+						<div class="espace_petit"></div>
+						<div class="col-9">
+							<p>
+								JavaScript est un langage de programmation de scripts utilisé pour
+								ajouter de la interactivité et de la dynamique aux sites internet.
+								Il permet de créer des effets de hover, de click, de changement de
+								contenu, de validation de formulaires, etc. JavaScript est un
+								langage très populaire et puissant qui peut être utilisé avec HTML
+								et CSS.
+							</p>
+						</div>
+						<div class="col-1">
+							<img src="img/JS.png" class="img-fluid rounded" alt="html" />
+						</div>
+						<div class="espace_petit"></div>
+						<div class="col-9">
+							<p>
+								Bootstrap est une bibliothèque de composants HTML, CSS et JavaScript
+								qui permet de développer rapidement et facilement des sites et des
+								applications web responsives et modernes. Bootstrap offre un grand
+								nombre de classes prédéfinies pour les éléments HTML, ainsi que des
+								modèles de navigation, de formulaires, de boutons, de tables, etc.
+								Bootstrap est très apprécié des développeurs pour sa simplicité
+								d'utilisation et sa flexibilité.
+							</p>
+						</div>
+
+						<div class="col-1">
+							<img src="img/Bootstrap.png" class="img-fluid rounded" alt="html" />
+						</div>
+						<div class="col-9">
+							<p>
+								HTML, CSS, JavaScript et Bootstrap sont des langages et outils
+								essentiels pour le développement de sites et applications web. HTML
+								permet de structurer le contenu, CSS de donner du style, JavaScript
+								d'ajouter de l'interactivité et Bootstrap de simplifier le
+								développement avec des composants prédéfinis.
+							</p>
 						</div>
 					</div>
 				</div>
