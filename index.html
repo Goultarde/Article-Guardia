@@ -102,7 +102,7 @@
 				<div class="container">
 					<div class="row justify-content-center backstylewhite">
 						<h2 class="text-center">PROJET 1</h2>
-						<div class="col-9">
+						<div class="col">
 							<p>
 								Ce projet avait pour objectif de nous aider à parler de manière plus
 								confiante. Pour ce faire, nous avons présenté un sujet qui nous
@@ -123,7 +123,7 @@
 								vie professionnelle et personnelle.
 							</p>
 						</div>
-						<div class="col-3">
+						<div class="col-md-6">
 							<img src="img/oral.png" class="img-fluid rounded" alt="oral" />
 						</div>
 					</div>
@@ -134,7 +134,7 @@
 		<!--Projet 2-->
 		<section class="Projet2 backstylewhite roundbord" id="projet2">
 			<div class="container">
-				<div class="row justify-content-center backstylewhite">
+				<div class="row backstylewhite justify-content-center">
 					<div class="col-12 roundbord">
 						<h2 class="text-center">PROJET 2</h2>
 						<p>
@@ -165,14 +165,20 @@
 						</p>
 					</div>
 					<h2 class="text-center">Objectifs</h2>
-					<div class="col-9">
+					<div class="col-8">
 						<p>
 							Le projet 2 à Guardia consistait en l'apprentissage des fondamentaux des
 							systèmes d'exploitation, comme indiqué précédemment. Et pour une
 							meilleure compréhension de ces derniers, nous avons dû installer un
 							serveur web Apache et un serveur DNS bind.
 						</p>
-						<br />
+					</div>
+
+					<div class="col-sm-3">
+						<img src="img/apache.svg" class="img-fluid rounded" alt="image de apache" />
+						<img src="img/bind9.jpg" class="img-fluid rounded" alt="" />
+					</div>
+					<div class="col-12">
 						<p>
 							Un serveur web est un ordinateur qui héberge des sites internets et les
 							rend accessibles aux utilisateurs sur Internet. Lorsqu'un utilisateur
@@ -211,15 +217,10 @@
 							contenu accessible aux utilisateurs.
 						</p>
 					</div>
-
-					<div class="col-2">
-						<img src="img/apache.svg" class="img-fluid rounded" alt="image de apache" />
-						<img src="img/bind9.jpg" class="img-fluid rounded" alt="" />
-					</div>
 					<div class="espace_moyen"></div>
 					<h2 class="text-center">Demonstration</h2>
 					<div class="espace_petit"></div>
-					<div class="col-5">
+					<div class="col">
 						<p>
 							1) Pour commencer on va en ligne de commande affin de taper la commande
 							« Sudo apt update » afin de mettre à jour la liste les paquet.
@@ -234,22 +235,22 @@
 							sudo devant, ou alors directement avec un compte root, soit super user.
 						</p>
 					</div>
-					<div class="col-6">
+					<div class="col-md-6">
 						<img src="img/1.png" class="img-fluid rounded" alt="" />
 					</div>
 					<div class="espace_moyen"></div>
-					<div class="col-5">
+					<div class="col">
 						<p>
 							2) En suite il faut bien évidement installer apache. Pour cela, nous
 							allons utilisez la commande : Sudo apt Install apache2
 						</p>
 					</div>
 
-					<div class="col-6">
+					<div class="col-md-6">
 						<img src="img/2.png" class="img-fluid rounded" alt="" />
 					</div>
 					<div class="espace_moyen"></div>
-					<div class="col-5">
+					<div class="col">
 						<p>
 							3) Enfin, pour vérifier que tout fonctionne correctement, nous allons
 							lancer la commande "sudo systemctl status apache2". Si tout fonctionne
@@ -262,22 +263,23 @@
 						</p>
 					</div>
 
-					<div class="col-6">
+					<div class="col-md-6">
 						<img src="img/3.png" class="img-fluid rounded" alt="" />
 					</div>
 					<div class="espace_moyen"></div>
 
-					<div class="col-10">
+					<div class="col">
 						<img src="img/4.png" class="img-fluid rounded" alt="" />
 					</div>
 					<div class="espace_petit"></div>
-					<div class="col-5">
+					<div class="col">
 						<p class="text-center">
 							Comme vous pouvez le voir, la page ce lance sans problème
 						</p>
+						<div class="espace_moyen"></div>
 					</div>
 					<h2>Configuration du Serveur DNS</h2>
-					<div class="col-5">
+					<div class="col-md-5">
 						<p>1) Pour commencer on va installer bind9 le serveur DNS.</p>
 						<p>
 							Sur l'image vous pouvez voir que bind9 est déjà installer, l'étape
@@ -285,21 +287,22 @@
 							résoudre un nom de domaine.
 						</p>
 					</div>
-					<div class="col-6">
+					<div class="col-6 col-md-6">
 						<img src="img/kali/1.png" class="img-fluid rounded" alt="" />
 					</div>
 					<div class="espace_moyen"></div>
-					<div class="col-5">
+					<div class="col-md-5">
 						<p>
 							2) Le premier fichier que l'on va venir modifier est le fichier
 							"named.conf.options"
 						</p>
 					</div>
 
-					<div class="col-6">
+					<div class="col-6 col-md-6">
 						<img src="img/kali/2.png" class="img-fluid rounded" alt="" />
 					</div>
-					<div class="col-5">
+					<div class="espace_petit"></div>
+					<div class="col-md-5">
 						<p>
 							Dans ce fichier on va pouvoir mettre ce que l'on appelle un DNS
 							FORWARDER, c'est à dire que ça va être un DNS complémentaire qui va
@@ -308,22 +311,21 @@
 						</p>
 					</div>
 
-					<div class="col-6">
+					<div class="col-6 col-md-6">
 						<img src="img/kali/3.png" class="img-fluid rounded" alt="" />
 					</div>
 					<div class="espace_moyen"></div>
 
-					<div class="col-5">
+					<div class="col-md-5">
 						<p>
 							4) Le prochain fichier à modifier est le fichier : "named.conf.local".
 						</p>
 					</div>
-
-					<div class="col-6">
+					<div class="col-6 col-md-6">
 						<img src="img/kali/4.png" class="img-fluid rounded" alt="" />
 					</div>
 					<div class="espace_moyen"></div>
-					<div class="col-5">
+					<div class="col-md-5">
 						<p>
 							C'est ici que l'on va configurer la zone, j'ai donner comme nom de
 							domaine, le nom "harouna.com"
@@ -334,27 +336,27 @@
 						</p>
 					</div>
 
-					<div class="col-6">
+					<div class="col-6 col-md-6">
 						<img src="img/kali/5.png" class="img-fluid rounded" alt="" />
 					</div>
 					<div class="espace_moyen"></div>
-					<div class="col-5">
-						<p>Ici je vais crée le fichier "haoruna.com" avec la commande touch,.</p>
+					<div class="col-md-5">
+						<p>Ici je vais crée le fichier "haoruna.com" avec la commande touch :</p>
 					</div>
 
-					<div class="col-6">
+					<div class="col-6 col-md-6">
 						<img src="img/kali/6.png" class="img-fluid rounded" alt="" />
 					</div>
 					<div class="espace_petit"></div>
-					<div class="col-5">
+					<div class="col-md-5 text-lg-end">
 						<p>Je modifier le fichier avec la commande nano :</p>
 					</div>
 
-					<div class="col-6">
+					<div class="col-6 col-md-6">
 						<img src="img/kali/7.png" class="img-fluid rounded" alt="" />
 					</div>
 					<div class="espace_moyen"></div>
-					<div class="col-5">
+					<div class="col-md-5">
 						<p>
 							Et je vais enfin pouvoir finaliser mon dns et assotiant l'ip de ma
 							machine debian (là ou il y a mon serveur web), et mon nom de domaine
@@ -362,31 +364,31 @@
 						</p>
 					</div>
 
-					<div class="col-6">
+					<div class="col-6 col-md-6">
 						<img src="img/kali/8.png" class="img-fluid rounded" alt="" />
 					</div>
 					<div class="espace_petit"></div>
-					<div class="col-5">
+					<div class="col-md-5 text-lg-end">
 						<p>je redémare bind :</p>
 					</div>
 
-					<div class="col-6">
+					<div class="col-6 col-md-6">
 						<img src="img/kali/10.png" class="img-fluid rounded" alt="" />
 					</div>
 					<div class="espace_petit"></div>
-					<div class="col-5">
+					<div class="col-md-5 text-lg-end">
 						<p>
 							Enfin je vérifie que tout foctionne avec la commande service named
 							status :
 						</p>
 					</div>
 
-					<div class="col-6">
+					<div class="col-6 col-md-6">
 						<img src="img/kali/11.png" class="img-fluid rounded" alt="" />
 					</div>
 					<div class="espace_moyen"></div>
 					<h2>Configuration d'un Windows Serveur Client</h2>
-					<div class="col-5">
+					<div class="col-md-5">
 						<p>
 							1) Affin de tester mes serveurs WEB et DNS en temp réel, j'ai pris une
 							machine windows cliente sur la quel je vais
@@ -398,18 +400,18 @@
 							<li>indication du serveur DNS soit l'ip de ma machine kali</li>
 						</p>
 					</div>
-					<div class="col-6">
+					<div class="col-6 col-mb-6">
 						<img src="img/windows/1.png" class="img-fluid rounded" alt="" />
 					</div>
 					<div class="espace_moyen"></div>
-					<div class="col-5">
+					<div class="col-md-5">
 						<p>
 							2) Enfin nous voyons qu'en t'appant le nom de domaine "Harouna.com" dans
 							la barre de recherche, on arrive bien sur notre page apache :
 						</p>
 					</div>
 
-					<div class="col-6">
+					<div class="col-6 col-mb-6">
 						<img src="img/windows/2.png" class="img-fluid rounded" alt="" />
 					</div>
 
@@ -424,7 +426,7 @@
 				<div class="container">
 					<div class="row justify-content-center backstylewhite">
 						<h2 class="text-center">PROJET 3</h2>
-						<div class="col-9">
+						<div class="col-md-10">
 							<p>
 								Python est un langage de programmation open-source, populaire pour
 								son utilisation en tant que langage de script et pour la création de
@@ -441,6 +443,15 @@
 								également compatible avec de nombreux systèmes d'exploitation, y
 								compris Windows, MacOS et Linux.
 							</p>
+						</div>
+						<div class="col-3">
+							<img
+								src="img/Python-logo-notext.svg.png"
+								class="img-fluid rounded"
+								alt="oral"
+							/>
+						</div>
+						<div class="col-12">
 							<h2>Objectifs</h2>
 							<p>
 								Nous avions un projet à réaliser en utilisant le langage de
@@ -488,13 +499,6 @@
 								>
 							</p>
 						</div>
-						<div class="col-3">
-							<img
-								src="img/Python-logo-notext.svg.png"
-								class="img-fluid rounded"
-								alt="oral"
-							/>
-						</div>
 					</div>
 				</div>
 			</section>
@@ -506,7 +510,7 @@
 				<div class="container">
 					<div class="row justify-content-center backstylewhite">
 						<h2 class="text-center">PROJET 4&5</h2>
-						<div class="col-9">
+						<div class="col-md-9">
 							<p>
 								HTML (HyperText Markup Language) est un langage de balisage utilisé
 								pour structurer et donner du sens aux contenus d'un document web. Il
@@ -515,11 +519,11 @@
 								et est le langage de base de la programmation web.
 							</p>
 						</div>
-						<div class="col-1">
+						<div class="col-3 col-md-1">
 							<img src="img/html.png" class="img-fluid rounded" alt="html" />
 						</div>
 						<div class="espace_petit"></div>
-						<div class="col-9">
+						<div class="col-md-9">
 							<p>
 								CSS (Cascading Style Sheets) est un langage de feuilles de style
 								utilisé pour décrire l'apparence des éléments HTML. Il permet de
@@ -528,11 +532,11 @@
 								de l'esthétique aux sites internet.
 							</p>
 						</div>
-						<div class="col-1">
+						<div class="col-3 col-md-1">
 							<img src="img/css.png" class="img-fluid rounded" alt="html" />
 						</div>
 						<div class="espace_petit"></div>
-						<div class="col-9">
+						<div class="col-md-9">
 							<p>
 								JavaScript est un langage de programmation de scripts utilisé pour
 								ajouter de la interactivité et de la dynamique aux sites internet.
@@ -542,11 +546,11 @@
 								et CSS.
 							</p>
 						</div>
-						<div class="col-1">
+						<div class="col-3 col-md-1">
 							<img src="img/JS.png" class="img-fluid rounded" alt="html" />
 						</div>
 						<div class="espace_petit"></div>
-						<div class="col-9">
+						<div class="col-md-9">
 							<p>
 								Bootstrap est une bibliothèque de composants HTML, CSS et JavaScript
 								qui permet de développer rapidement et facilement des sites et des
@@ -558,10 +562,10 @@
 							</p>
 						</div>
 
-						<div class="col-1">
+						<div class="col-3 col-md-1">
 							<img src="img/Bootstrap.png" class="img-fluid rounded" alt="html" />
 						</div>
-						<div class="col-9">
+						<div class="col-md-9">
 							<p>
 								HTML, CSS, JavaScript et Bootstrap sont des langages et outils
 								essentiels pour le développement de sites et applications web. HTML
@@ -700,7 +704,13 @@
 		<div class="espace_moyen"></div>
 		<!--Projet 7-->
 		<!--Projet -->
-		<footer></footer>
+		<footer class="text-center">
+			<!-- Copyright -->
+			<div class="text-center p-3 copyright">
+				<p>© 2022 Copyright: Harouna</p>
+			</div>
+			<!-- Copyright -->
+		</footer>
 
 		<!--Scripts-->
 		<script

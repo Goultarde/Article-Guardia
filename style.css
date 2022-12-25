@@ -60,3 +60,12 @@ body{
     text-align: justify;
     
 }
+.maxheight{
+    max-height: 30%;
+}
+.copyright{
+    background :  rgba(0, 0, 0, 0.1);
+    background-color: rgb(29, 29, 29);
+    color: #fff;
+    font-family: 'Secular One', serif;
+}
