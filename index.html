@@ -90,7 +90,7 @@
 					<p>
 						Dans cet article, je vais vous présenter les différents projets que nous
 						avons faits jusque-là en première année. Pour l’illustrer je vais me servir
-						de ce qui a déjà été faits mais également de ce que j'ai refais en dehors
+						de ce qui a déjà été faits mais également de ce que j'ai refait en dehors
 						des projets.
 					</p>
 				</div>
@@ -111,12 +111,12 @@
 							<p>
 								Nous devions soutenir notre projet, répondre aux questions et
 								défendre notre point de vue face à des objections. Notre
-								problématique était donc la suivante : « comment améliorer l'aisance
+								problématique était donc la suivante : « Comment améliorer l'aisance
 								orale de nos apprenants pour qu'ils puissent se sentir à l'aise à
 								l’oral ».
 							</p>
 							<p>
-								A l'issue de ce projet, nous étions capables de parler aisément en
+								À l'issue de ce projet, nous étions capables de parler aisément en
 								public, de soutenir et faire ressortir les points positifs de notre
 								éloquence, de répondre aux questions et de défendre nos points de
 								vue s'ils étaient mis en cause. Des compétences très utiles dans la
@@ -180,7 +180,7 @@
 					</div>
 					<div class="col-12">
 						<p>
-							Un serveur web est un ordinateur qui héberge des sites internets et les
+							Un serveur web est un ordinateur qui héberge des sites Internet et les
 							rend accessibles aux utilisateurs sur Internet. Lorsqu'un utilisateur
 							tape l'adresse d'un site internet dans son navigateur, il envoie une
 							demande au serveur web correspondant, qui répond en envoyant le contenu
@@ -222,15 +222,15 @@
 					<div class="espace_petit"></div>
 					<div class="col">
 						<p>
-							1) Pour commencer on va en ligne de commande affin de taper la commande
-							« Sudo apt update » afin de mettre à jour la liste les paquet.
+							1) Pour commencer, on va en ligne de commande afin de taper la commande
+							« Sudo apt update » afin de mettre à jour la liste les paquets.
 						</p>
 						<p>
 							De manière général, c’est une commande qu’il faut taper fréquemment pour
-							avoir tout le temps un system a jour.
+							avoir tout le temps un system à jour.
 						</p>
 						<p>
-							A noter que la commande sudo nous permet d'effectuer des actions en tant
+							À noter que la commande sudo nous permet d'effectuer des actions en tant
 							que super utilisateur. La commande apt ne fonctionne que si on ajoute un
 							sudo devant, ou alors directement avec un compte root, soit super user.
 						</p>
@@ -241,8 +241,8 @@
 					<div class="espace_moyen"></div>
 					<div class="col">
 						<p>
-							2) En suite il faut bien évidement installer apache. Pour cela, nous
-							allons utilisez la commande : Sudo apt Install apache2
+							2) En suite, il faut bien évidemment installer apache. Pour cela, nous
+							allons utiliser la commande : Sudo apt Install apache2
 						</p>
 					</div>
 
@@ -254,8 +254,8 @@
 						<p>
 							3) Enfin, pour vérifier que tout fonctionne correctement, nous allons
 							lancer la commande "sudo systemctl status apache2". Si tout fonctionne
-							comme prévu, cette commande devrait afficher le statut "active
-							(running)" et "loaded" pour Apache.
+							comme prévu, cette commande devra afficher le statut "active (running)"
+							et "loaded" pour Apache.
 						</p>
 					</div>
 
@@ -266,7 +266,7 @@
 					<p>
 						Nous pouvons ouvrir un navigateur web sur n'importe quel appareil du réseau
 						et entrer notre adresse IP ou "localhost" dans la barre de recherche. Si
-						tout est correct, nous devrions atterrir sur une page web Apache (modifiable
+						tout est correct, nous devrons atterrir sur une page web Apache (modifiable
 						dans le dossier /var/www/...).
 					</p>
 
@@ -276,16 +276,16 @@
 					<div class="espace_petit"></div>
 					<div class="col">
 						<p class="text-center">
-							Comme vous pouvez le voir, la page ce lance sans problème
+							Comme vous pouvez le voir, la page se lance sans problème
 						</p>
 						<div class="espace_moyen"></div>
 					</div>
 					<h2>Configuration du Serveur DNS</h2>
 					<div class="col-md-5">
-						<p>1) Pour commencer on va installer bind9 le serveur DNS.</p>
+						<p>1) Pour commencer, on va installer bind9 le serveur DNS.</p>
 						<p>
-							Sur l'image vous pouvez voir que bind9 est déjà installer, l'étape
-							suivante est donc la configuration de ce dernier affin qu'il puissent
+							Sur l'image, vous pouvez voir que bind9 est déjà installer, l'étape
+							suivante est donc la configuration de ce dernier afin qu'il puissent
 							résoudre un nom de domaine.
 						</p>
 					</div>
@@ -306,10 +306,10 @@
 					<div class="espace_petit"></div>
 					<div class="col-md-5">
 						<p>
-							Dans ce fichier on va pouvoir mettre ce que l'on appelle un DNS
-							FORWARDER, c'est à dire que ça va être un DNS complémentaire qui va
+							Dans ce fichier, on va pouvoir mettre ce que l'on appelle un DNS
+							FORWARDER, c'est-à-dire que ça va être un DNS complémentaire qui va
 							résoudre les nom de domaine que le DNS principale ne peut pas résoudre.
-							Ici j'ai mis le serveur DNS de google.
+							Ici j'ai mis le serveur DNS de Google.
 						</p>
 					</div>
 
@@ -329,11 +329,11 @@
 					<div class="espace_moyen"></div>
 					<div class="col-md-5">
 						<p>
-							C'est ici que l'on va configurer la zone, j'ai donner comme nom de
+							C'est ici que l'on va configurer la zone, j'ai donné comme nom de
 							domaine, le nom "harouna.com"
 						</p>
 						<p>
-							Cela pourait être n'importe quoi du moment qu'il y bien un
+							Cela pourrait être n'importe quoi du moment qu'il y bien un
 							".quelquechose"
 						</p>
 					</div>
@@ -343,7 +343,7 @@
 					</div>
 					<div class="espace_moyen"></div>
 					<div class="col-md-5">
-						<p>Ici je vais crée le fichier "haoruna.com" avec la commande touch :</p>
+						<p>Ici, je vais crée le fichier "haoruna.com" avec la commande touch :</p>
 					</div>
 
 					<div class="col col-md-6">
@@ -351,7 +351,7 @@
 					</div>
 					<div class="espace_petit"></div>
 					<div class="col-md-5 text-lg-end">
-						<p>Je modifier le fichier avec la commande nano :</p>
+						<p>Je modifie le fichier avec la commande nano :</p>
 					</div>
 
 					<div class="col col-md-6">
